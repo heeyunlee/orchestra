@@ -13,6 +13,11 @@ Bring a problem statement, affected users, success criteria, and constraints. A 
 
 Read `DESIGN-WORKFLOW.md` from the project root or the profile the user points to, if available.
 Apply the relevant settings within the project's governing instructions.
+In the `orchestra-research` tool checklist, use checked optional companions when relevant,
+available, and authorized. Skip unchecked and unlisted optional companions unless the user
+approves an override for this run. Treat `None` as no optional companions. If the checklist
+is absent or `Unspecified`, follow the project's existing tool preferences. If a checked
+tool is unavailable, use its agreed fallback if the stage permits it, or report the gap.
 
 1. Trace the existing experience. List the surfaces and meaningful states, including permission, empty, loading, failure, recovery, and small-screen states where applicable. Record what you could actually inspect.
 2. Gather relevant project precedents, primary references, or examples supplied by the user. For each, record the source and what transfers to this problem. If browsing or app access is missing, use supplied material and label the gaps.

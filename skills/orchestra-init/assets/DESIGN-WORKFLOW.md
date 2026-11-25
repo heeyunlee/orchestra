@@ -2,14 +2,32 @@
 
 Use this profile with the project's governing instructions. Update it when workflow decisions change.
 
-## Companion tools
+## Companion tools by stage
 
-| Tool | Type | Stage or task | Availability | Fallback if needed |
-| --- | --- | --- | --- | --- |
-| | | | | |
+For each stage, replace `Unspecified` with `None` or with checklist items.
+Use `- [x] Tool name (type) — purpose. Availability. Fallback if needed.` to enable a tool
+and `- [ ]` to skip it. Types include skill, plugin, connector, and MCP server.
+A checked item still requires current access and any applicable authorization.
 
-Types include skill, plugin, connector, and MCP server. Check current availability before using
-a listed tool.
+### orchestra-why
+
+Unspecified
+
+### orchestra-research
+
+Unspecified
+
+### orchestra-draw
+
+Unspecified
+
+### orchestra-divide
+
+Unspecified
+
+### orchestra-conquer
+
+Unspecified
 
 ## Work tracking
 

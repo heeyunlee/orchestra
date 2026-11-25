@@ -13,6 +13,11 @@ Bring the request or symptom, any observations, and access to the people or mate
 
 Read `DESIGN-WORKFLOW.md` from the project root or the profile the user points to, if available.
 Apply the relevant settings within the project's governing instructions.
+In the `orchestra-why` tool checklist, use checked optional companions when relevant,
+available, and authorized. Skip unchecked and unlisted optional companions unless the user
+approves an override for this run. Treat `None` as no optional companions. If the checklist
+is absent or `Unspecified`, follow the project's existing tool preferences. If a checked
+tool is unavailable, use its agreed fallback if the stage permits it, or report the gap.
 
 1. Inspect available product evidence. Separate what was observed, what someone reported, and what you infer. Record the affected user, task, and current behavior.
 2. Write the problem as an observable user failure. Note the impact and whether its size or frequency is known. Put proposed solutions in a separate list of hypotheses.

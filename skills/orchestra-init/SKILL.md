@@ -25,22 +25,36 @@ Run on request. The result is a project-level Markdown profile that each Orchest
 Ask one short question at a time about decisions that are still open. Skip confirmed choices and
 let the user defer any field.
 
-1. **Companion tools.** Ask which existing or additional skills, plugins, connectors, and MCP
-   servers the user wants to use alongside Orchestra. Suggest relevant options from the inventory
-   when they fit the project. If a capability is missing, describe what would help, such
-   as a browser review skill or a connector for the chosen tracker. Ask which stage or task
-   each chosen tool should support. For each choice, record its name, type, purpose, and whether it is available now, needs setup,
-   or has unknown availability. Record chosen tools rather than the full inventory. Ask what
-   to use when a tool is unavailable if that would affect the workflow.
-2. **Project tracking.** Ask what kind of tool the team uses to plan and track work and which
+1. **Project tracking.** Ask what kind of tool the team uses to plan and track work and which
    one to use for this project. Accept issue trackers such as Linear or Jira, project boards
    such as Trello, GitHub Issues, a Markdown plan, another system, or no tracker. Ask for the
    relevant team, project, board, or repository, and the ticket conventions that matter.
    Ask whether the default is to draft plans or create tickets when authorized. Choosing a
    tracker and having a working connection are separate facts.
+2. **Companion tools by stage.** Ask which skills, plugins, connectors, and MCP servers the
+   user wants to use in Why, Research, Draw, Divide, and Conquer. Suggest relevant choices from
+   discovery and the chosen tracker. Let the user add a tool that needs setup. Show one stage
+   at a time, using a multi-select control if the host offers one. Otherwise show a Markdown
+   checklist and accept replies such as “check Jira for Divide” or “uncheck Figma for Draw.”
+   Let users choose no companion tools or defer the choice. Start new options unchecked until
+   confirmed. When editing a stage, show its current selections. When a project rule requires
+   a tool, identify that requirement in the choice.
 3. **Design and delivery.** Ask where to find design guidelines, artifacts, and checkpoints.
    Ask who approves designs, what evidence they need, and what counts as ready to deliver.
    Ask about merge or release approval if the project instructions leave it open.
+
+## Record stage selections
+
+- Save each stage under its skill name in the profile. Use one checkbox per discussed tool,
+  with its host-discoverable name, type, purpose, and availability. Add a fallback when agreed.
+  The same tool can be checked for one stage and unchecked for another.
+- A checked tool is eligible for that stage, subject to availability, permissions, and project
+  rules. Unchecked tools are skipped. A stage with a checklist uses only its checked optional
+  companions unless the user approves an override for the current run.
+- Use `None` if the user chooses no companion tools. Use `Unspecified` when they defer.
+  For an existing profile without checklists, use the existing tool preferences as starting
+  points and confirm selections before saving them. Preserve the choices for other stages when
+  updating one stage.
 
 ## Save confirmed choices
 
@@ -56,8 +70,20 @@ let the user defer any field.
 
 ## Example
 
-The host lists a browser review skill and a Jira connector. The team chooses the browser skill
-for `/orchestra-draw`, wants to add a design MCP server later, and tracks work in Jira project `SHOP`.
-Record the browser skill as available, the design MCP server as needing setup, and Jira with
-the confirmed access status and a draft-first preference. If Jira access is unavailable,
-`/orchestra-divide` can still return Jira-ready Markdown drafts for `SHOP`.
+The host lists a browser review skill and a Jira connector. For a team that drafts Jira
+tickets in project `SHOP`, the user might choose:
+
+```markdown
+### orchestra-draw
+
+- [x] Browser review (skill) — test the prototype. Available.
+- [ ] Jira (connector) — read design tickets. Available.
+
+### orchestra-divide
+
+- [x] Jira (connector) — ground ticket drafts for SHOP. Available.
+```
+
+With those settings, Draw skips Jira and Divide can read it when permitted. If access is
+unavailable, Divide can still return Jira-ready Markdown drafts. The user can edit the
+profile or rerun init to change a selection.

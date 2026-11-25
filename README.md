@@ -41,12 +41,15 @@ Choose [`orchestra-init`](skills/orchestra-init/SKILL.md) in the installer or in
 npx skills add heeyunlee/orchestra --skill orchestra-init
 ```
 
-Run `/orchestra-init` to check which skills your host can discover and choose which skills,
-plugins, connectors, and MCP servers to use together. It asks how you track work and captures
-design and delivery defaults. It saves confirmed choices in `DESIGN-WORKFLOW.md` at your
-project's root. If you
-use an existing workflow document, give the next skill its path. Every design stage can use
-the profile, and you can still supply the same settings directly.
+Run `/orchestra-init` to discover available tools and choose which skills, plugins,
+connectors, and MCP servers to use in each stage. You can check Jira for Divide
+and leave it unchecked for Draw. The interview also captures your tracker, design,
+and delivery defaults.
+
+Selections are saved in `DESIGN-WORKFLOW.md` at your project's root. Edit the
+`[x]` and `[ ]` entries there or run init again to change them. Each stage reads
+its own checklist. If you use an existing workflow document, give the next skill
+its path.
 
 Try `/orchestra-init We use Linear and want ticket drafts first.`
 
