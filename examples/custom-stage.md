@@ -1,7 +1,7 @@
 # Add a custom accessibility review
 
 Create `design-accessibility/SKILL.md` in your host's project skill directory. Paste the
-example below and invoke `design-accessibility` on a candidate revision when specialized
+example below and run `/pbs design-accessibility` on a candidate revision when specialized
 accessibility review is needed. The review can supply evidence to the drawing round.
 
 ```markdown

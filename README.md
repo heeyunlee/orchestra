@@ -2,33 +2,36 @@
 
 Five independent [Agent Skills](https://agentskills.io/specification) for taking product design from a problem to verified delivery. Start at the stage whose input you already have.
 
-| Skill | Bring | Get |
-| --- | --- | --- |
-| [design-why](skills/design-why/SKILL.md) | A proposed change or a user problem | An agreed problem, evidence, and success criteria |
-| [design-research](skills/design-research/SKILL.md) | A problem and success criteria | Compared approaches and a drawing brief |
-| [design-draw](skills/design-draw/SKILL.md) | A drawing brief or a saved round | A reviewed, approved revision and handover |
-| [design-divide](skills/design-divide/SKILL.md) | An approved revision | Independently verifiable implementation slices and dependencies |
-| [design-conquer](skills/design-conquer/SKILL.md) | A delivery plan with dependencies | Verified delivery evidence or a resumable checkpoint |
+| Command | Skill | Bring | Get |
+| --- | --- | --- | --- |
+| `/pbs why` | [design-why](skills/design-why/SKILL.md) | A proposed change or a user problem | An agreed problem, evidence, and success criteria |
+| `/pbs research` | [design-research](skills/design-research/SKILL.md) | A problem and success criteria | Compared approaches and a drawing brief |
+| `/pbs draw` | [design-draw](skills/design-draw/SKILL.md) | A drawing brief or a saved round | A reviewed, approved revision and handover |
+| `/pbs divide` | [design-divide](skills/design-divide/SKILL.md) | An approved revision | Independently verifiable implementation slices and dependencies |
+| `/pbs conquer` | [design-conquer](skills/design-conquer/SKILL.md) | A delivery plan with dependencies | Verified delivery evidence or a resumable checkpoint |
 
 ## Install only the stages you want
 
-Clone or download this repository. Open its root in a terminal and copy each selected
-skill folder into your host's project skill directory. Keep the whole folder so its
-references and templates travel with it.
+Clone or download this repository. Install the [pbs entry point](skills/pbs/SKILL.md)
+and whichever stages you want to run. Open the repository root in a terminal and copy each
+selected skill folder into your host's project skill directory. Keep the whole folder so
+its references and templates travel with it. Run `/pbs` by itself to choose a stage.
 
 | Host | Project directory | Start |
 | --- | --- | --- |
-| [Codex](https://developers.openai.com/codex/skills) | `.agents/skills/` | Select or mention the skill in chat |
-| [Claude Code](https://code.claude.com/docs/en/skills) | `.claude/skills/` | Type `/design-draw` or name another installed skill |
-| [Cursor](https://cursor.com/docs/skills) | `.cursor/skills/` | Select the skill in agent chat |
-| [VS Code](https://code.visualstudio.com/docs/agent-customization/agent-skills) | `.github/skills/` | Select the skill from the chat command menu |
-| Any chat or editor | A folder you can open or attach | Provide `SKILL.md` and the referenced files when needed |
+| [Codex](https://developers.openai.com/codex/skills) | `.agents/skills/` | Select `pbs` and enter a stage, such as `draw` |
+| [Claude Code](https://code.claude.com/docs/en/skills) | `.claude/skills/` | Type `/pbs draw` |
+| [Cursor](https://cursor.com/docs/skills) | `.cursor/skills/` | Select `pbs` in agent chat and enter a stage |
+| [VS Code](https://code.visualstudio.com/docs/agent-customization/agent-skills) | `.github/skills/` | Select `/pbs` from the chat command menu and enter a stage |
+| Any chat or editor | A folder you can open or attach | Provide the entry point, selected skill, and its references, then ask for `/pbs draw` or another stage |
 
 For example, to install only the drawing stage in Codex on macOS or Linux:
 
 ```sh
 project=/path/to/your/project
 mkdir -p "$project/.agents/skills"
+test ! -e "$project/.agents/skills/pbs" &&
+  cp -R skills/pbs "$project/.agents/skills/"
 test ! -e "$project/.agents/skills/design-draw" &&
   cp -R skills/design-draw "$project/.agents/skills/"
 ```
@@ -37,8 +40,7 @@ On Windows, copy the folder in Explorer. If you already have a copy, compare cha
 replacing it. Some hosts discover several skill directories. Install one copy per skill
 in an active project to avoid ambiguous discovery.
 
-Try: “Use design-draw with this approved brief. Save your state in `design/rounds/usage-alert/STATE.md`.
-Ask me about unresolved decisions before drawing.”
+Try `/pbs draw Use this approved brief and save state in design/rounds/usage-alert/STATE.md.`
 
 ## Customize the workflow
 
@@ -49,8 +51,8 @@ Ask me about unresolved decisions before drawing.”
   output fields that downstream stages use. Give custom skills unique names when both copies
   will be installed.
 - **Add a stage:** create a sibling folder whose `SKILL.md` declares a matching `name` and a
-  `description`. Document its inputs, outputs, and when to invoke it. Invoke it by name where it
-  fits. See [the accessibility review example](examples/custom-stage.md).
+  `description`. Document its inputs, outputs, and when to invoke it. Run it with
+  `/pbs <skill-name>`. See [the accessibility review example](examples/custom-stage.md).
 - **Set project rules:** pass the project design language, approval owner, review gates, artifact
   format, and tracker as inputs or put them in your project's instructions. A drawing round
   records these choices in its own state file. Teams can keep these settings alongside the project.
