@@ -22,15 +22,21 @@ Resolve helpers by the name recorded in the profile, using the qualified name wh
 If a checked helper requires direct user invocation, ask the user to run it and continue from
 its output when supplied. Apply the same fallback rule if the user chooses to skip it.
 
-1. Inspect available product evidence. Separate what was observed, what someone reported, and what you infer. Record the affected user, task, and current behavior.
-2. Write the problem as an observable user failure. Note the impact and whether its size or frequency is known. Put proposed solutions in a separate list of hypotheses.
-3. Identify constraints and boundaries. Use a short question for each ambiguity that could change the problem or success criteria. Explain the decision each answer affects.
-4. Define observable outcomes, a way to check them, and a baseline when available. Mark unknown baselines and name the evidence needed to establish them.
-5. Ask the owner to confirm the problem and criteria. Save or return the agreed record. If agreement or evidence is still pending, identify the open item and who can resolve it.
+1. Ground the request in the product and its goals. Use the user's brief, the profile's Product
+   context, and relevant project docs or existing flows. Identify the intended audience, their
+   task, and the user or company outcome this work should support. Distinguish confirmed goals
+   from assumptions. Surface conflicting goals. Ask a focused question if different interpretations
+   would change the brief or its success checks.
+2. Inspect available product evidence. Separate what was observed, what someone reported, and what
+   you infer. Record the affected user, task, and current behavior.
+3. Write the problem as an observable user failure. Note the impact and whether its size or frequency is known. Put proposed solutions in a separate list of hypotheses.
+4. Identify constraints and boundaries. Use a short question for each ambiguity that could change the problem or success criteria. Explain the decision each answer affects.
+5. Define observable outcomes, a way to check them, and a baseline when available. Mark unknown baselines and name the evidence needed to establish them.
+6. Ask the owner to confirm the problem and criteria. Save or return the agreed record. If agreement or evidence is still pending, identify the open item and who can resolve it.
 
 ## Output
 
-Record the **problem**, **affected users and task**, **evidence and unknowns**, **success criteria and checks**, **constraints and exclusions**, and **agreement status**. This record can feed any research process.
+Record the **problem**, **affected users and task**, **relevant product goal**, **evidence and unknowns**, **success criteria and checks**, **constraints and exclusions**, and **agreement status**. This record can feed any research process.
 
 ## Example
 

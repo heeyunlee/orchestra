@@ -34,11 +34,13 @@ which installed skill to use. Run just the selected skill unless the user asks f
 
 1. Check for an existing brief, artifacts, and checkpoint. Resume from the first stage whose
    required output is still open. For a fresh request, start with Why. Use the existing project
-   profile when available.
+   profile when available. Ground short requests in the product's audience and current goal
+   before choosing a direction.
 2. Run the installed stage skills in order. Pass the agreed problem and success checks from
    `orchestra-why` to `orchestra-research`, the drawing brief to `orchestra-draw`, the approved
    revision to `orchestra-divide`, and the implementation plan and acceptance checks to
-   `orchestra-conquer`. Open the selected stage's instructions as you reach it. If a stage is
+   `orchestra-conquer`. Carry the agreed product goal and success checks through each handoff.
+   Open the selected stage's instructions as you reach it. If a stage is
    missing, name it and keep the latest checkpoint so work can resume after it is installed or
    supplied.
 3. At each handoff, record the agreed output and next step in the project's chosen location.

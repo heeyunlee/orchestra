@@ -35,9 +35,11 @@ Install `orchestra` and the five stages below to run the full workflow. Try this
 
 > /orchestra Let's build and deploy a waitlist that gives the next person 15 minutes to claim a canceled pottery class seat.
 
-Orchestra carries the decisions from Why through Conquer and pauses for the approvals your
-project requires. Follow the [pottery class waitlist example](examples/pottery-class-waitlist.md)
-to see the handoffs and what a verified release looks like.
+Orchestra grounds the request in your product, its users, and the goal the work should serve.
+It carries those decisions from Why through Conquer and pauses for the approvals your project
+requires. See the [pottery class waitlist example](examples/pottery-class-waitlist.md) for a
+release walkthrough, or [the same feed request in two products](examples/social-feed.md) for
+how product context changes the brief.
 
 ## Skill catalog
 

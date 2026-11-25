@@ -39,7 +39,11 @@ let the user defer any field.
    Let users choose no companion tools or defer the choice. Start new options unchecked until
    confirmed. When editing a stage, show its current selections. When a project rule requires
    a tool, identify that requirement in the choice.
-3. **Design and delivery.** Ask where to find design guidelines, artifacts, and checkpoints.
+3. **Product context.** Read the relevant product brief or project overview if available. Capture
+   what the product does, who it serves, and the current user or company goal. Ask only for
+   missing information that would change the design work, and let the user defer it. Link to the
+   source when available. Ask before saving sensitive context in a shared project file.
+4. **Design and delivery.** Ask where to find design guidelines, artifacts, and checkpoints.
    Ask who approves designs, what evidence they need, and what counts as ready to deliver.
    Ask about merge or release approval if the project instructions leave it open.
 

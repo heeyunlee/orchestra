@@ -2,6 +2,13 @@
 
 Use this profile with the project's governing instructions. Update it when workflow decisions change.
 
+## Product context
+
+- Product and current scope:
+- Primary audience and what they come to do:
+- Current user or company goal relevant to this product:
+- Relevant product brief or decision links:
+
 ## Companion tools by stage
 
 For each stage, replace `Unspecified` with `None` or with checklist items.
