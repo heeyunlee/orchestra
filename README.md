@@ -42,9 +42,9 @@ npx skills add heeyunlee/orchestra --skill orchestra-init
 ```
 
 Run `/orchestra-init` to discover available tools and choose which skills, plugins,
-connectors, and MCP servers to use in each stage. You can check Jira for Divide
-and leave it unchecked for Draw. The interview also captures your tracker, design,
-and delivery defaults.
+connectors, and MCP servers to use in each stage. For example, check
+`mattpocock-skills:grill-with-docs` for Why and leave it unchecked for Research.
+The interview also captures your tracker, design, and delivery defaults.
 
 Selections are saved in `DESIGN-WORKFLOW.md` at your project's root. Edit the
 `[x]` and `[ ]` entries there or run init again to change them. Each stage reads

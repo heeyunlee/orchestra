@@ -46,8 +46,10 @@ let the user defer any field.
 ## Record stage selections
 
 - Save each stage under its skill name in the profile. Use one checkbox per discussed tool,
-  with its host-discoverable name, type, purpose, and availability. Add a fallback when agreed.
-  The same tool can be checked for one stage and unchecked for another.
+  with its host-discoverable name, type, purpose, and availability. Use the qualified
+  plugin skill name when the host exposes it. Note if a helper requires direct user
+  invocation, and add a fallback when agreed. The same tool can be checked for one stage
+  and unchecked for another.
 - A checked tool is eligible for that stage, subject to availability, permissions, and project
   rules. Unchecked tools are skipped. A stage with a checklist uses only its checked optional
   companions unless the user approves an override for the current run.
@@ -68,7 +70,22 @@ let the user defer any field.
    tracker identifiers or links and keep credentials in the host's supported connection settings.
    Installing tools, connecting accounts, and writing tickets require their own authorization.
 
-## Example
+## Examples
+
+Enable Matt Pocock's documentation interview in Why and skip it in Research:
+
+```markdown
+### orchestra-why
+
+- [x] mattpocock-skills:grill-with-docs (skill) — sharpen the problem and capture agreed terminology or decisions. Available. User invocation required.
+
+### orchestra-research
+
+- [ ] mattpocock-skills:grill-with-docs (skill) — skip the interview during research. Available.
+```
+
+With those settings, Why prompts the user to invoke the helper if the host requires it,
+then uses the agreed findings. Research uses its own research steps.
 
 The host lists a browser review skill and a Jira connector. For a team that drafts Jira
 tickets in project `SHOP`, the user might choose:

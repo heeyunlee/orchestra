@@ -18,6 +18,9 @@ available, and authorized. Skip unchecked and unlisted optional companions unles
 approves an override for this run. Treat `None` as no optional companions. If the checklist
 is absent or `Unspecified`, follow the project's existing tool preferences. If a checked
 tool is unavailable, use its agreed fallback if the stage permits it, or report the gap.
+Resolve helpers by the name recorded in the profile, using the qualified name when provided.
+If a checked helper requires direct user invocation, ask the user to run it and continue from
+its output when supplied. Apply the same fallback rule if the user chooses to skip it.
 Use the configured tracker and destination when permitted by the stage's tool choices. If the
 tracker is unspecified, ask only when the choice affects the requested output. Use Markdown when
 the profile selects it, tracker access is unavailable or unchecked, or the user wants a draft.

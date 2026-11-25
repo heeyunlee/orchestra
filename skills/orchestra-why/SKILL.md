@@ -18,6 +18,9 @@ available, and authorized. Skip unchecked and unlisted optional companions unles
 approves an override for this run. Treat `None` as no optional companions. If the checklist
 is absent or `Unspecified`, follow the project's existing tool preferences. If a checked
 tool is unavailable, use its agreed fallback if the stage permits it, or report the gap.
+Resolve helpers by the name recorded in the profile, using the qualified name when provided.
+If a checked helper requires direct user invocation, ask the user to run it and continue from
+its output when supplied. Apply the same fallback rule if the user chooses to skip it.
 
 1. Inspect available product evidence. Separate what was observed, what someone reported, and what you infer. Record the affected user, task, and current behavior.
 2. Write the problem as an observable user failure. Note the impact and whether its size or frequency is known. Put proposed solutions in a separate list of hypotheses.

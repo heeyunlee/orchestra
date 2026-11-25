@@ -18,6 +18,9 @@ available, and authorized. Skip unchecked and unlisted optional companions unles
 approves an override for this run. Treat `None` as no optional companions. If the checklist
 is absent or `Unspecified`, follow the project's existing tool preferences. If a checked
 tool is unavailable, use its agreed fallback if the stage permits it, or report the gap.
+Resolve helpers by the name recorded in the profile, using the qualified name when provided.
+If a checked helper requires direct user invocation, ask the user to run it and continue from
+its output when supplied. Apply the same fallback rule if the user chooses to skip it.
 
 1. Read the [round protocol](references/round.md) and create or resume the [state record](assets/STATE.md). Verify the location, revision, owner, required tools, and pending step. Ask decision-changing questions one at a time and record the answers. Obtain the go-ahead before drawing.
 2. Produce an inspectable, versioned revision. Use a fresh drawer with the strongest available model for the required artifact when the host and user authorize delegation. Otherwise draw in the current session when you can produce the artifact, or ask for an artifact from a capable tool or collaborator.
