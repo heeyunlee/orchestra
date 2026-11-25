@@ -9,7 +9,7 @@ Use the first word of the request after the pbs invocation to select a stage. Pa
 
 | Command | Skill | Purpose |
 | --- | --- | --- |
-| `/pbs setup` | `initial-lines` | Set up or update project workflow defaults |
+| `/pbs init` | `initial-lines` | Set up or update project workflow defaults |
 | `/pbs why` | `design-why` | Define the product problem and success criteria |
 | `/pbs research` | `design-research` | Compare approaches and agree on a drawing brief |
 | `/pbs draw` | `design-draw` | Draw, review, approve, or resume a design round |

@@ -18,7 +18,7 @@ delivery. It saves confirmed choices in `DESIGN-WORKFLOW.md` at your project's r
 use an existing workflow document, give the next skill its path. Every design stage can use
 the profile, and you can still supply the same settings directly.
 
-Try `/pbs setup We use Linear and want ticket drafts first.`
+Try `/pbs init We use Linear and want ticket drafts first.`
 
 ## Install only the stages you want
 
