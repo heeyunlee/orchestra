@@ -1,5 +1,5 @@
 ---
-name: design-why
+name: pbs-why
 description: Defines a product design problem and how to measure improvement. Use when a feature or redesign has been proposed and the affected users, evidence, or success criteria need agreement.
 ---
 

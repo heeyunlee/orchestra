@@ -1,5 +1,5 @@
 ---
-name: design-divide
+name: pbs-divide
 description: Turns an approved design into implementation slices, dependencies, and QA checks. Use when engineering needs a delivery plan tied to the exact approved revision.
 ---
 

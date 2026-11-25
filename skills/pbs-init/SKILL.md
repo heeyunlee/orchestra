@@ -1,5 +1,5 @@
 ---
-name: initial-lines
+name: pbs-init
 description: Interviews a team and saves project defaults for the design workflow. Use when asked to initialize product-builder-skills or update their tracker, design, review, or delivery settings.
 ---
 
@@ -18,4 +18,4 @@ Run on request. The result is a project-level Markdown file that any of the desi
 
 ## Example
 
-A team uses Jira project `SHOP`, drafts tickets for review, approves designs through the product lead, and considers a slice ready after staging QA. Save those choices. Later, `design-divide` reads the profile and produces Jira-ready drafts for `SHOP`. The user can authorize ticket creation separately. A team using Markdown can choose a local plan and use the same skills without a tracker connection.
+A team uses Jira project `SHOP`, drafts tickets for review, approves designs through the product lead, and considers a slice ready after staging QA. Save those choices. Later, `pbs-divide` reads the profile and produces Jira-ready drafts for `SHOP`. The user can authorize ticket creation separately. A team using Markdown can choose a local plan and use the same skills without a tracker connection.
