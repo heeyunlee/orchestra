@@ -10,6 +10,16 @@ Five independent [Agent Skills](https://agentskills.io/specification) for taking
 | [design-divide](skills/design-divide/SKILL.md) | An approved revision | Independently verifiable implementation slices and dependencies |
 | [design-conquer](skills/design-conquer/SKILL.md) | A delivery plan with dependencies | Verified delivery evidence or a resumable checkpoint |
 
+## Optional project setup
+
+Install [Initial Lines](skills/initial-lines/SKILL.md) and ask it to set up the workflow.
+It asks which tracker you use, where design work lives, who approves it, and how you verify
+delivery. It saves confirmed choices in `DESIGN-WORKFLOW.md` at your project's root. If you
+use an existing workflow document, give the next skill its path. Every design stage can use
+the profile, and you can still supply the same settings directly.
+
+Try: “Use initial-lines to set up this project. We use Linear and want ticket drafts first.”
+
 ## Install only the stages you want
 
 Clone or download this repository. Open its root in a terminal and copy each selected

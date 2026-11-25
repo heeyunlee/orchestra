@@ -11,6 +11,9 @@ Bring the request or symptom, any observations, and access to the people or mate
 
 ## Instructions
 
+Read `DESIGN-WORKFLOW.md` from the project root or the profile the user points to, if available.
+Apply the relevant settings within the project's governing instructions.
+
 1. Inspect available product evidence. Separate what was observed, what someone reported, and what you infer. Record the affected user, task, and current behavior.
 2. Write the problem as an observable user failure. Note the impact and whether its size or frequency is known. Put proposed solutions in a separate list of hypotheses.
 3. Identify constraints and boundaries. Use a short question for each ambiguity that could change the problem or success criteria. Explain the decision each answer affects.

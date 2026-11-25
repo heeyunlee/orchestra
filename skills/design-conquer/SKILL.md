@@ -11,6 +11,12 @@ Bring the approved revision, slice list, dependencies, ownership, QA checks, and
 
 ## Instructions
 
+Read `DESIGN-WORKFLOW.md` from the project root or the profile the user points to, if available.
+Apply the relevant settings within the project's governing instructions.
+Use the configured tracker for ticket evidence when available. With a Markdown plan, use the
+plan and the project's review and QA evidence. When tracker access is missing, record any required
+status check that is still owed.
+
 1. Read current tracker, branch, review and QA evidence. Match it to the approved plan. Record which slices are complete, active, runnable, or blocked. On resume, check for existing owners and sessions before starting work.
 2. Start slices with satisfied dependencies. Run independent slices concurrently when authorized and supported, with separate ownership. Use sequential work in a host without delegation or when slices share prerequisites.
 3. Follow each slice through the project's review and verification gates. Record the tested revision, environment, and observed outcomes. Route failures back to the owner, fix within scope, and rerun the affected checks against the new revision.

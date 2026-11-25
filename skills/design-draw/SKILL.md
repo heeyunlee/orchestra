@@ -11,6 +11,9 @@ Bring an agreed drawing brief or an existing `STATE.md`. A brief identifies the 
 
 ## Instructions
 
+Read `DESIGN-WORKFLOW.md` from the project root or the profile the user points to, if available.
+Apply the relevant settings within the project's governing instructions.
+
 1. Read the [round protocol](references/round.md) and create or resume the [state record](assets/STATE.md). Verify the location, revision, owner, required tools, and pending step. Ask decision-changing questions one at a time and record the answers. Obtain the go-ahead before drawing.
 2. Produce an inspectable, versioned revision. Use a fresh drawer with the strongest available model for the required artifact when the host and user authorize delegation. Otherwise draw in the current session when you can produce the artifact, or ask for an artifact from a capable tool or collaborator.
 3. Audit each revision and run the [review lanes](references/review.md). Keep the reviewer assignments, opened states, evidence and findings with the revision. Carry open findings forward. Resolve questions that could change the design before the next pass.

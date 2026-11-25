@@ -11,6 +11,9 @@ Bring a problem statement, affected users, success criteria, and constraints. A 
 
 ## Instructions
 
+Read `DESIGN-WORKFLOW.md` from the project root or the profile the user points to, if available.
+Apply the relevant settings within the project's governing instructions.
+
 1. Trace the existing experience. List the surfaces and meaningful states, including permission, empty, loading, failure, recovery, and small-screen states where applicable. Record what you could actually inspect.
 2. Gather relevant project precedents, primary references, or examples supplied by the user. For each, record the source and what transfers to this problem. If browsing or app access is missing, use supplied material and label the gaps.
 3. Compare plausible approaches against the same criteria. Include tradeoffs and describe what evidence could change the recommendation. Reuse shared patterns when they fit the intended behavior.
