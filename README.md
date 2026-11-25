@@ -79,13 +79,6 @@ in an active project to avoid ambiguous discovery.
 
 Try `/orchestra-draw Use this approved brief and save state in design/rounds/usage-alert/STATE.md.`
 
-## Upgrading from the earlier skill names
-
-Install the `orchestra-*` skills you use, then remove the matching older copies after saving
-any local edits. For example, replace `pbs-draw` or `design-draw` with `orchestra-draw`, and
-`pbs-init` or `initial-lines` with `orchestra-init`. The optional menu is now `orchestra`.
-Existing workflow profiles and round checkpoints stay at their current paths.
-
 ## Customize the workflow
 
 For CLI-managed installations, use `npx skills list` to see what's installed,
