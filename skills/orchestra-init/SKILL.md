@@ -1,11 +1,11 @@
 ---
-name: pbs-init
-description: Checks available skills and interviews a team about tools and project defaults. Use when initializing product-builder-skills or updating the tracker, skills, plugins, connectors, MCP servers, or workflow settings.
+name: orchestra-init
+description: Checks available skills and interviews a team about tools and project defaults. Use when initializing orchestra or updating the tracker, skills, plugins, connectors, MCP servers, or workflow settings.
 ---
 
 # Initial Lines
 
-Run on request. The result is a project-level Markdown profile that each PBS skill can use.
+Run on request. The result is a project-level Markdown profile that each Orchestra skill can use.
 
 ## Check the current setup
 
@@ -26,7 +26,7 @@ Ask one short question at a time about decisions that are still open. Skip confi
 let the user defer any field.
 
 1. **Companion tools.** Ask which existing or additional skills, plugins, connectors, and MCP
-   servers the user wants to use alongside PBS. Suggest relevant options from the inventory
+   servers the user wants to use alongside Orchestra. Suggest relevant options from the inventory
    when they fit the project. If a capability is missing, describe what would help, such
    as a browser review skill or a connector for the chosen tracker. Ask which stage or task
    each chosen tool should support. For each choice, record its name, type, purpose, and whether it is available now, needs setup,
@@ -57,7 +57,7 @@ let the user defer any field.
 ## Example
 
 The host lists a browser review skill and a Jira connector. The team chooses the browser skill
-for `/pbs-draw`, wants to add a design MCP server later, and tracks work in Jira project `SHOP`.
+for `/orchestra-draw`, wants to add a design MCP server later, and tracks work in Jira project `SHOP`.
 Record the browser skill as available, the design MCP server as needing setup, and Jira with
 the confirmed access status and a draft-first preference. If Jira access is unavailable,
-`/pbs-divide` can still return Jira-ready Markdown drafts for `SHOP`.
+`/orchestra-divide` can still return Jira-ready Markdown drafts for `SHOP`.

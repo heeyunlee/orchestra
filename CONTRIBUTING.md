@@ -8,16 +8,16 @@ Give the skill a description that explains when to use it. Store templates in `a
 detailed guidance in `references/` within the skill, and link to them with relative paths. For
 metadata limits, see the [Agent Skills specification](https://agentskills.io/specification).
 
-For new first-party stages, use a `pbs-<stage>` name and update the README catalog and
-the optional `pbs` menu. Users can invoke custom skills by their installed name or through
-`/pbs <skill-name>`.
+For new first-party stages, use a `orchestra-<stage>` name and update the README catalog and
+the optional `orchestra` menu. Users can invoke custom skills by their installed name or through
+`/orchestra <skill-name>`.
 
 Before opening a pull request, list the skills from your checkout and install the one you changed
 in a disposable project. Replace the source path and agent as needed.
 
 ```sh
-npx skills add /path/to/product-builder-skills --list
-npx skills add /path/to/product-builder-skills --skill pbs-draw --agent codex
+npx skills add /path/to/orchestra --list
+npx skills add /path/to/orchestra --skill orchestra-draw --agent codex
 ```
 
 Check that the installed references open. Try one documented invocation where the host permits

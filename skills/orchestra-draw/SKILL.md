@@ -1,5 +1,5 @@
 ---
-name: pbs-draw
+name: orchestra-draw
 description: Runs an attended design round from a brief through drawing, evidence-based review, approval, and handover. Use to start a new round, review a revision, or resume a saved STATE.md.
 ---
 

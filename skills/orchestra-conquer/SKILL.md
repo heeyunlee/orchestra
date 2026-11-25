@@ -1,5 +1,5 @@
 ---
-name: pbs-conquer
+name: orchestra-conquer
 description: Executes a dependency-aware design delivery plan and tracks real verification through readiness. Use when implementation slices are ready to start or delivery needs to resume from a checkpoint.
 ---
 

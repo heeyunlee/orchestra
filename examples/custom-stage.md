@@ -1,12 +1,12 @@
 # Add a custom accessibility review
 
-Create `pbs-accessibility/SKILL.md` in your host's project skill directory. Paste the
-example below and run `/pbs-accessibility` on a candidate revision when specialized
+Create `orchestra-accessibility/SKILL.md` in your host's project skill directory. Paste the
+example below and run `/orchestra-accessibility` on a candidate revision when specialized
 accessibility review is needed. The review can supply evidence to the drawing round.
 
 ```markdown
 ---
-name: pbs-accessibility
+name: orchestra-accessibility
 description: Checks an inspectable design revision against its agreed accessibility criteria. Use when a design round needs focused keyboard or assistive technology evidence.
 ---
 

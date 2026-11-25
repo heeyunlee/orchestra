@@ -1,5 +1,5 @@
 ---
-name: pbs-research
+name: orchestra-research
 description: Compares design approaches and produces an agreed drawing brief. Use when the product problem is known and the team needs research, alternatives, or a list of states to design.
 ---
 
