@@ -1,6 +1,6 @@
 ---
 name: initial-lines
-description: Interviews a team and saves project defaults for the design workflow. Use when asked to initialize Design Skills or update their tracker, design, review, or delivery settings.
+description: Interviews a team and saves project defaults for the design workflow. Use when asked to initialize product-builder-skills or update their tracker, design, review, or delivery settings.
 ---
 
 # Initial Lines
