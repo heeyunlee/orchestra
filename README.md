@@ -41,9 +41,10 @@ Choose [`pbs-init`](skills/pbs-init/SKILL.md) in the installer or install it dir
 npx skills add heeyunlee/product-builder-skills --skill pbs-init
 ```
 
-Run `/pbs-init` to set up the workflow.
-It asks which tracker you use, where design work lives, who approves it, and how you verify
-delivery. It saves confirmed choices in `DESIGN-WORKFLOW.md` at your project's root. If you
+Run `/pbs-init` to check which skills your host can discover and choose which skills,
+plugins, connectors, and MCP servers to use together. It asks how you track work and captures
+design and delivery defaults. It saves confirmed choices in `DESIGN-WORKFLOW.md` at your
+project's root. If you
 use an existing workflow document, give the next skill its path. Every design stage can use
 the profile, and you can still supply the same settings directly.
 

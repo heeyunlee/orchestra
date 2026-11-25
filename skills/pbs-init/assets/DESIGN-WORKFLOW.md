@@ -2,10 +2,20 @@
 
 Use this profile with the project's governing instructions. Update it when workflow decisions change.
 
+## Companion tools
+
+| Tool | Type | Stage or task | Availability | Fallback if needed |
+| --- | --- | --- | --- | --- |
+| | | | | |
+
+Types include skill, plugin, connector, and MCP server. Check current availability before using
+a listed tool.
+
 ## Work tracking
 
-- Tracker or Markdown:
-- Team, project, or board:
+- Tracking type and tool (or no tracker):
+- Team, project, board, or repository:
+- Tracker access:
 - Ticket templates, dependency links, and status conventions:
 - Default action for implementation plans (draft, or write when authorized):
 
