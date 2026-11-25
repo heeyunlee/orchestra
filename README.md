@@ -1,5 +1,7 @@
 # Orchestra
 
+![Seen from the audience, a conductor leads musicians whose heads are symbols for skills, connectors, plugins, and MCP servers.](assets/orchestra-cover.png)
+
 **Conduct your product workflow from idea to delivery.**
 
 Orchestra gives your AI agent a set of [Agent Skills](https://agentskills.io/specification)
