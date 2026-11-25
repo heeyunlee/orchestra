@@ -2,6 +2,28 @@
 
 Five independent [Agent Skills](https://agentskills.io/specification) for taking product design from a problem to verified delivery. Start at the stage whose input you already have.
 
+## Quick start
+
+From the project where you want to use the skills, run:
+
+```sh
+npx skills add heeyunlee/product-builder-skills
+```
+
+Choose `pbs` and the stages you want, then select your agent. To install just the drawing
+workflow, including its entry point:
+
+```sh
+npx skills add heeyunlee/product-builder-skills --skill pbs --skill design-draw
+```
+
+Run `/pbs draw` with an approved brief, or run `/pbs` to see the available stages.
+Use [manual installation](#manual-installation) if your agent is absent from the installer or you
+prefer copying the files yourself. See the [Skills CLI documentation](https://github.com/vercel-labs/skills)
+for its Node.js requirements and agent support.
+
+## Skill catalog
+
 | Command | Skill | Bring | Get |
 | --- | --- | --- | --- |
 | `/pbs why` | [design-why](skills/design-why/SKILL.md) | A proposed change or a user problem | An agreed problem, evidence, and success criteria |
@@ -12,7 +34,14 @@ Five independent [Agent Skills](https://agentskills.io/specification) for taking
 
 ## Optional project setup
 
-Install [Initial Lines](skills/initial-lines/SKILL.md) and ask it to set up the workflow.
+Choose [Initial Lines](skills/initial-lines/SKILL.md) along with `pbs` in the installer,
+or install both directly:
+
+```sh
+npx skills add heeyunlee/product-builder-skills --skill pbs --skill initial-lines
+```
+
+Run `/pbs init` to set up the workflow.
 It asks which tracker you use, where design work lives, who approves it, and how you verify
 delivery. It saves confirmed choices in `DESIGN-WORKFLOW.md` at your project's root. If you
 use an existing workflow document, give the next skill its path. Every design stage can use
@@ -20,7 +49,7 @@ the profile, and you can still supply the same settings directly.
 
 Try `/pbs init We use Linear and want ticket drafts first.`
 
-## Install only the stages you want
+## Manual installation
 
 Clone or download this repository. Install the [pbs entry point](skills/pbs/SKILL.md)
 and whichever stages you want to run. Open the repository root in a terminal and copy each
@@ -54,6 +83,11 @@ Try `/pbs draw Use this approved brief and save state in design/rounds/usage-ale
 
 ## Customize the workflow
 
+For CLI-managed installations, use `npx skills list` to see what's installed,
+`npx skills check` to check for updates, and `npx skills remove design-research` to remove one
+stage. Review local edits before updating a modified skill.
+
+
 - **Remove a stage:** remove its copied folder from your host's skill directory. Supply the next
   stage with the equivalent input from your own process. For example, use a research team's
   agreed brief with `design-draw`.
@@ -77,4 +111,8 @@ artifact and use a visual model for image evidence when available. External revi
 user-supplied test evidence can fill capability gaps. Record checks still owed and pause at
 any required gate that lacks evidence.
 
-See the [end-to-end example](examples/usage-alert.md) or start with any skill's own example.
+## Examples and contributions
+
+- [Build a usage alert](examples/usage-alert.md) follows all five stages and shows how to resume a drawing round.
+- [Add a custom accessibility review](examples/custom-stage.md) shows how to extend the workflow and invoke the new skill through `/pbs`.
+- [Contribute a skill](CONTRIBUTING.md) covers the directory layout, examples, and checks.
