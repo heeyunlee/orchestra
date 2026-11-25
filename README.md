@@ -1,6 +1,10 @@
-# orchestra
+# Orchestra
 
-Five independent [Agent Skills](https://agentskills.io/specification) for taking product design from a problem to verified delivery. Start at the stage whose input you already have.
+**Conduct your product workflow from idea to delivery.**
+
+Orchestra gives your AI agent a set of [Agent Skills](https://agentskills.io/specification)
+to define the problem, research options, review a design, plan the build, and verify delivery.
+Start at any stage and choose which skills, plugins, connectors, and MCP servers it uses.
 
 ## Quick start
 
