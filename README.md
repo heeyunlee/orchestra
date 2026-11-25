@@ -2,6 +2,28 @@
 
 Five independent [Agent Skills](https://agentskills.io/specification) for taking product design from a problem to verified delivery. Start at the stage whose input you already have.
 
+## Quick start
+
+From the project where you want to use the skills, run:
+
+```sh
+npx skills add heeyunlee/product-builder-skills
+```
+
+Choose `pbs` and the stages you want, then select your agent. To install just the drawing
+workflow, including its entry point:
+
+```sh
+npx skills add heeyunlee/product-builder-skills --skill pbs --skill design-draw
+```
+
+Run `/pbs draw` with an approved brief, or run `/pbs` to see the available stages.
+Use [manual installation](#manual-installation) if your agent is absent from the installer or you
+prefer copying the files yourself. See the [Skills CLI documentation](https://github.com/vercel-labs/skills)
+for its Node.js requirements and agent support.
+
+## Skill catalog
+
 | Command | Skill | Bring | Get |
 | --- | --- | --- | --- |
 | `/pbs why` | [design-why](skills/design-why/SKILL.md) | A proposed change or a user problem | An agreed problem, evidence, and success criteria |
@@ -10,7 +32,7 @@ Five independent [Agent Skills](https://agentskills.io/specification) for taking
 | `/pbs divide` | [design-divide](skills/design-divide/SKILL.md) | An approved revision | Independently verifiable implementation slices and dependencies |
 | `/pbs conquer` | [design-conquer](skills/design-conquer/SKILL.md) | A delivery plan with dependencies | Verified delivery evidence or a resumable checkpoint |
 
-## Install only the stages you want
+## Manual installation
 
 Clone or download this repository. Install the [pbs entry point](skills/pbs/SKILL.md)
 and whichever stages you want to run. Open the repository root in a terminal and copy each
@@ -44,6 +66,11 @@ Try `/pbs draw Use this approved brief and save state in design/rounds/usage-ale
 
 ## Customize the workflow
 
+For CLI-managed installations, use `npx skills list` to see what's installed,
+`npx skills check` to check for updates, and `npx skills remove design-research` to remove one
+stage. Review local edits before updating a modified skill.
+
+
 - **Remove a stage:** remove its copied folder from your host's skill directory. Supply the next
   stage with the equivalent input from your own process. For example, use a research team's
   agreed brief with `design-draw`.
@@ -67,4 +94,8 @@ artifact and use a visual model for image evidence when available. External revi
 user-supplied test evidence can fill capability gaps. Record checks still owed and pause at
 any required gate that lacks evidence.
 
-See the [end-to-end example](examples/usage-alert.md) or start with any skill's own example.
+## Examples and contributions
+
+- [Build a usage alert](examples/usage-alert.md) follows all five stages and shows how to resume a drawing round.
+- [Add a custom accessibility review](examples/custom-stage.md) shows how to extend the workflow and invoke the new skill through `/pbs`.
+- [Contribute a skill](CONTRIBUTING.md) covers the directory layout, examples, and checks.
