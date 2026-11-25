@@ -1,4 +1,4 @@
-# Design Skills
+# product-builder-skills
 
 Five independent [Agent Skills](https://agentskills.io/specification) for taking product design from a problem to verified delivery. Start at the stage whose input you already have.
 
