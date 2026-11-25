@@ -29,7 +29,10 @@ missing or unchecked, record any required status check that is still owed.
 2. Start slices with satisfied dependencies. Run independent slices concurrently when authorized and supported, with separate ownership. Use sequential work in a host without delegation or when slices share prerequisites.
 3. Follow each slice through the project's review and verification gates. Record the tested revision, environment, and observed outcomes. Route failures back to the owner, fix within scope, and rerun the affected checks against the new revision.
 4. Run the combined acceptance check after the required slices land in the designated environment. Mark a slice or the parent ready only when its required evidence is in place. Apply any explicit approval rules before merging or deploying.
-5. Save a checkpoint when work cannot continue. Include active ownership, tested revisions, evidence, blockers, the unblock condition, and the next runnable slice. On resume, reconcile the checkpoint with current evidence.
+5. When deployment is requested and authorized, use the project's release procedure. Verify the
+   deployed revision in the target environment and run the project's post-deploy smoke check.
+   Record the observed result.
+6. Save a checkpoint when work cannot continue. Include active ownership, tested revisions, evidence, blockers, the unblock condition, and the next runnable slice. On resume, reconcile the checkpoint with current evidence.
 
 ## Output
 

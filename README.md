@@ -29,6 +29,16 @@ Use [manual installation](#manual-installation) if your agent is absent from the
 prefer copying the files yourself. See the [Skills CLI documentation](https://github.com/vercel-labs/skills)
 for its Node.js requirements and agent support.
 
+## From one line to deployment
+
+Install `orchestra` and the five stages below to run the full workflow. Try this in your agent:
+
+> /orchestra Let's build and deploy a waitlist that gives the next person 15 minutes to claim a canceled pottery class seat.
+
+Orchestra carries the decisions from Why through Conquer and pauses for the approvals your
+project requires. Follow the [pottery class waitlist example](examples/pottery-class-waitlist.md)
+to see the handoffs and what a verified release looks like.
+
 ## Skill catalog
 
 | Command | Bring | Get |
