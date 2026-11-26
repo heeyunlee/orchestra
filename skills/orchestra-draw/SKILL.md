@@ -11,7 +11,7 @@ Bring an agreed drawing brief or an existing `STATE.md`. A brief identifies the 
 
 ## Instructions
 
-Read `DESIGN-WORKFLOW.md` from the project root or the profile the user points to, if available.
+Read `ORCHESTRA-SCORE.md` from the project root or the profile the user points to, if available.
 Apply the relevant settings within the project's governing instructions.
 In the `orchestra-draw` tool checklist, use checked optional companions when relevant,
 available, and authorized. Skip unchecked and unlisted optional companions unless the user

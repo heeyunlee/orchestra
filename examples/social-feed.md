@@ -2,7 +2,7 @@
 
 > /orchestra Let's build a social feed.
 
-Orchestra starts with Why and checks the product context in the project's `DESIGN-WORKFLOW.md`,
+Orchestra starts with Why and checks the product context in the project's `ORCHESTRA-SCORE.md`,
 existing product docs, and what the user has said. The same request can lead to different
 briefs, depending on who uses the product and what they need.
 

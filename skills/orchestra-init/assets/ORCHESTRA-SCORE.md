@@ -1,4 +1,4 @@
-# Design workflow
+# Orchestra score
 
 Use this profile with the project's governing instructions. Update it when workflow decisions change.
 
