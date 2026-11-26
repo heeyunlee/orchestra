@@ -64,7 +64,7 @@ connectors, and MCP servers to use in each stage. For example, check
 `mattpocock-skills:grill-with-docs` for Why and leave it unchecked for Research.
 The interview also captures your tracker, design, and delivery defaults.
 
-Selections are saved in `DESIGN-WORKFLOW.md` at your project's root. Edit the
+Selections are saved in `ORCHESTRA-SCORE.md` at your project's root. Edit the
 `[x]` and `[ ]` entries there or run init again to change them. Each stage reads
 its own checklist. If you use an existing workflow document, give the next skill
 its path.

@@ -9,7 +9,7 @@ Run on request. The result is a project-level Markdown profile that each Orchest
 
 ## Check the current setup
 
-1. Find the project root and read its governing instructions and existing `DESIGN-WORKFLOW.md`.
+1. Find the project root and read its governing instructions and existing `ORCHESTRA-SCORE.md`.
    Reuse answers already established by the user or those files. If an existing workflow document
    covers the same settings, ask whether to use that document and record its path in the handoff.
 2. Check the current host's skill list or discovery mechanism for skills available to this
@@ -65,9 +65,9 @@ let the user defer any field.
 ## Save confirmed choices
 
 1. Review the proposed settings with the user before saving. Use the
-   [profile template](assets/DESIGN-WORKFLOW.md) and record deferred choices as `Unspecified`.
+   [profile template](assets/ORCHESTRA-SCORE.md) and record deferred choices as `Unspecified`.
    Resolve any conflict with the project's governing instructions before saving the affected value.
-2. Save confirmed settings in `DESIGN-WORKFLOW.md` at the project root or the agreed location.
+2. Save confirmed settings in `ORCHESTRA-SCORE.md` at the project root or the agreed location.
    Preserve unrelated settings on update. When the host cannot write files, return ready-to-paste
    Markdown and its intended path.
 3. Give the user the path and one example invocation. Setup records preferences. Ask for
